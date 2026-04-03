@@ -1,5 +1,5 @@
-node_modules/
-client/node_modules/
-backend/node_modules/
-.env
-dist/
+# Entornos y compilados de Python
+venv/
+__pycache__/
+*.pyc
+db.sqlite3
