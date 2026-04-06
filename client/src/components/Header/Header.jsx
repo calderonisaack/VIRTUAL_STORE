@@ -1,11 +1,12 @@
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header className="header">
-      <div className="header__logo">
+      <Link to="/" className="header__logo" style={{ textDecoration: 'none', color: 'inherit' }}>
         <h2>Virtual<span>Store</span></h2>
-      </div>
+      </Link>
       
       <div className="header__search">
         <input type="text" placeholder="Busca productos, marcas y más..." />
@@ -17,7 +18,10 @@ function Header() {
           <span>🛒</span>
           <span className="cart-count">0</span>
         </div>
-        <button className="header__login">Iniciar Sesión</button>
+
+        <Link to="/admin" className="header__login" style={{ textDecoration: 'none' }}>
+          Panel Admin
+        </Link>
       </nav>
     </header>
   );

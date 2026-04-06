@@ -18,7 +18,6 @@ function HomePage() {
 
   return (
     <div className="home-page">
-      <Header />
       <Hero />
       
       <div className="main-layout">

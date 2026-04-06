@@ -1,18 +1,23 @@
 .footer {
-  background-color: #232f3e;
-  color: white;
+  background-color: #000000;
+  color: #f5f6fa;
   margin-top: 50px;
 }
 
 .footer__top {
-  background-color: #37475a;
+  background-color: #2f3542;
   text-align: center;
   padding: 15px;
   cursor: pointer;
   font-size: 0.9rem;
+  color: #74b9ff;
+  transition: background 0.3s;
 }
 
-.footer__top:hover { background-color: #485769; }
+.footer__top:hover {
+  background-color: #34495e;
+  color: #55efc4;
+}
 
 .footer__content {
   display: grid;
@@ -25,23 +30,31 @@
 
 .footer__section h4 {
   margin-bottom: 15px;
-  color: #febd69;
+  color: #a29bfe;
 }
 
-.footer__section ul { list-style: none; }
+.footer__section ul {
+  list-style: none;
+}
+
 .footer__section li {
   margin-bottom: 10px;
   font-size: 0.9rem;
   cursor: pointer;
   opacity: 0.8;
+  color: #d1d8e0;
 }
 
-.footer__section li:hover { text-decoration: underline; opacity: 1; }
+.footer__section li:hover {
+  text-decoration: underline;
+  opacity: 1;
+  color: #74b9ff;
+}
 
 .footer__bottom {
-  border-top: 1px solid #3a4553;
+  border-top: 1px solid #2f3542;
   text-align: center;
   padding: 20px;
   font-size: 0.8rem;
-  color: #999;
+  color: #7f8c8d;
 }

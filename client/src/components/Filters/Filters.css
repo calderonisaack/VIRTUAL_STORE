@@ -1,17 +1,18 @@
 .filters {
   width: 100%; 
   padding: 20px;
-  background-color: white;
+  background-color: #f5f6fa;
   border-radius: 8px;
-  border: 1px solid #e0e0e0; 
+  border: 1px solid #d1d8e0;
   height: fit-content;
 }
 
 .filters__title {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #a29bfe;
   padding-bottom: 10px;
+  color: #000000;
 }
 
 .filters__group {
@@ -21,7 +22,7 @@
 .filters__group h4 {
   font-size: 1rem;
   margin-bottom: 10px;
-  color: #555;
+  color: #000000;
 }
 
 .filters__group ul {
@@ -35,6 +36,11 @@
   gap: 8px;
   font-size: 0.9rem;
   cursor: pointer;
+  color: #2f3542;
+}
+
+.filters__group li:hover {
+  color: #a29bfe;
 }
 
 .filters__price {
@@ -46,16 +52,24 @@
 .filters__price input {
   width: 60px;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #7f8c8d;
   border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .filters__price button {
   padding: 5px 10px;
-  background: white;
-  border: 1px solid #ccc;
+  background-color: #74b9ff;
+  color: #000000;
+  border: 1px solid #55a3f0;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.filters__price button:hover {
+  background-color: #55efc4;
+  border-color: #55efc4;
 }
 
 @media (max-width: 768px) {
@@ -66,6 +80,8 @@
     padding: 15px;
     border-radius: 0;
     white-space: nowrap;
+    background-color: #ffffff;
+    border-bottom: 2px solid #a29bfe;
   }
 
   .filters__title {
